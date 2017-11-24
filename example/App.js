@@ -10,7 +10,7 @@ import {
   View,
   Text,
 } from 'react-native';
-import PCDashBoard from 'react-native-instrument-board';
+import InstrumentBoard from 'react-native-instrument-board';
 
 export default class App extends Component<{}> {
   state = {
@@ -20,15 +20,17 @@ export default class App extends Component<{}> {
   handlePress = () => {
     if (this.state.percentage === 100) {
       this.setState({percentage: 0});
-    } else {
-      this.setState({percentage: this.state.percentage + 10});
+    } if (this.state.percentage + 10.5 >= 100) {
+      this.setState({percentage: 100});
+    }else {
+      this.setState({percentage: this.state.percentage + 10.5});
     }
   };
 
   render() {
     return (
       <View style={styles.container}>
-        <PCDashBoard percentage={this.state.percentage}/>
+        <InstrumentBoard percentage={this.state.percentage}/>
         <Text onPress={this.handlePress}>增加</Text>
       </View>
     );
