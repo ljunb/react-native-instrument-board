@@ -9,7 +9,7 @@
 	"dependencies": {
 		"react": "16.0.0",
 		"react-native": "0.50.3",
-		"react-native-instrument-board": "0.0.2",
+		"react-native-instrument-board": "0.0.3",
 		"react-native-svg": "^6.0.0"
 	},
 	"devDependencies": {
