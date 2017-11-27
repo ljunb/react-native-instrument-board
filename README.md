@@ -1,4 +1,9 @@
 # react-native-instrument-board
+
+[![npm](https://img.shields.io/npm/v/react-native-instrument-board.svg)](https://www.npmjs.com/package/react-native-instrument-board)
+[![npm](https://img.shields.io/npm/dt/react-native-instrument-board.svg)](https://www.npmjs.com/package/react-native-instrument-board)
+[![npm](https://img.shields.io/npm/l/react-native-instrument-board.svg)](https://github.com/ljunb/react-native-instrument-board/blob/master/LICENSE)
+
 该组件源于公司项目，当前业务主要用于反馈买车用户的一个消费态度，工作之余就将其抽取出来了。主要还是当做一个记录，如果后续时间允许，会考虑写一篇关于做这个组件的文章，写写当时遇到的问题和一些技术点。组件依赖于`react-native-svg`，所以基本是`SVG`绘制语句的应用。目前测试情况来看，可能需要 RN >= 0.50.0 😶😶~
 
 如果你想在项目中使用，Android 下可能需要修改项目的 support 包到 25 版本，如 `example` 中的 [gradle 文件](https://github.com/ljunb/react-native-instrument-board/blob/master/example/android/app/build.gradle) 所示。
@@ -32,7 +37,7 @@ react-native run-ios/run-android
 ## 参数
 
 名称              | 类型   |  默认值      | 参数描述
-----------------  | ------ | -------- | -----------  | -----------
+----------------  | ------ | -------- | -----------  
 percentage             | number |  80  | 进度百分比，内圈红色部分，范围0-100
 radius             | number |  150  | 仪表盘半径，注意是外圈半径 
 strokeWidth              | number |   8   | 仪表盘边框宽度
